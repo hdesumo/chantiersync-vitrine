@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function HeaderDark() {
   return (
     <header className="bg-gray-900 text-white px-6 py-3 flex justify-between items-center">
-      {/* Logo cliquable */}
       <h1 className="font-bold text-lg">
         <Link href="/" className="hover:text-blue-400 transition-colors">
           ChantierSync

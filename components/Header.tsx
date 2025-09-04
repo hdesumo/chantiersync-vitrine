@@ -55,7 +55,6 @@ export default function Header() {
 
         {/* Actions */}
         <div className="hidden md:flex space-x-4 items-center">
-          {/* Toggle Dark Mode */}
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className="p-2 rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
