@@ -33,24 +33,24 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700 dark:text-gray-300">
-          <a href="/" className="hover:text-blue-700 dark:hover:text-white">
+          <Link href="/" className="hover:text-blue-700 dark:hover:text-white">
             Accueil
-          </a>
-          <a href="#solution" className="hover:text-blue-700 dark:hover:text-white">
+          </Link>
+          <Link href="#solution" className="hover:text-blue-700 dark:hover:text-white">
             Solution
-          </a>
-          <a href="#about" className="hover:text-blue-700 dark:hover:text-white">
+          </Link>
+          <Link href="#about" className="hover:text-blue-700 dark:hover:text-white">
             À propos
-          </a>
-          <a href="#affiliation" className="hover:text-blue-700 dark:hover:text-white">
+          </Link>
+          <Link href="#affiliation" className="hover:text-blue-700 dark:hover:text-white">
             Programme d’affiliation
-          </a>
+          </Link>
           <Link href="/faq" className="hover:text-blue-700 dark:hover:text-white">
             FAQ
           </Link>
-          <a href="#contacts" className="hover:text-blue-700 dark:hover:text-white">
+          <Link href="#contacts" className="hover:text-blue-700 dark:hover:text-white">
             Contacts
-          </a>
+          </Link>
         </nav>
 
         {/* Actions */}
@@ -89,12 +89,24 @@ export default function Header() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-6 py-4 space-y-3 text-sm">
-          <a href="/" className="block hover:text-blue-700 dark:hover:text-white">Accueil</a>
-          <a href="#solution" className="block hover:text-blue-700 dark:hover:text-white">Solution</a>
-          <a href="#about" className="block hover:text-blue-700 dark:hover:text-white">À propos</a>
-          <a href="#affiliation" className="block hover:text-blue-700 dark:hover:text-white">Programme d’affiliation</a>
-          <Link href="/faq" className="block hover:text-blue-700 dark:hover:text-white">FAQ</Link>
-          <a href="#contacts" className="block hover:text-blue-700 dark:hover:text-white">Contacts</a>
+          <Link href="/" className="block hover:text-blue-700 dark:hover:text-white">
+            Accueil
+          </Link>
+          <Link href="#solution" className="block hover:text-blue-700 dark:hover:text-white">
+            Solution
+          </Link>
+          <Link href="#about" className="block hover:text-blue-700 dark:hover:text-white">
+            À propos
+          </Link>
+          <Link href="#affiliation" className="block hover:text-blue-700 dark:hover:text-white">
+            Programme d’affiliation
+          </Link>
+          <Link href="/faq" className="block hover:text-blue-700 dark:hover:text-white">
+            FAQ
+          </Link>
+          <Link href="#contacts" className="block hover:text-blue-700 dark:hover:text-white">
+            Contacts
+          </Link>
 
           <hr className="my-2 border-gray-300 dark:border-gray-600" />
           <button
